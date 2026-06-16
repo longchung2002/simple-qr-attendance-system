@@ -5,8 +5,7 @@
 console.log("APP VERSION 20260616-01");
 alert("APP VERSION 20260616-01");
 
-const WEB_APP_URL =
-"https://script.google.com/macros/s/AKfycbw9HzuYP6ILG6d0IAfOX9AXNNu4HnB1yku_sIg1QSbstJnl6WrjHvezdTpRDd_rPXZR_w/exec";
+const WEB_APP_URL ="YOUR_WEB_APP_URL";
 const codeReader =
   new ZXing.BrowserMultiFormatReader();
 
