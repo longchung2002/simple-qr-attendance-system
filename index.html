@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="manifest.json">
+
+  <script src="https://unpkg.com/@zxing/library@latest"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #202124;
+      color: white;
+      text-align: center;
+    }
+
+    video {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+    }
+
+    select, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    #result {
+      padding: 10px;
+      background: #333;
+      margin: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>QR Điểm danh</h2>
+
+<!-- CHỌN LỚP -->
+<select id="classSelect">
+  <option value="1">Lớp 1</option>
+  <option value="2">Lớp 2</option>
+  <option value="3">Lớp 3</option>
+  <option value="4">Lớp 4</option>
+  <option value="5">Lớp 5</option>
+</select>
+
+<br>
+
+<video id="video" autoplay playsinline></video>
+
+<div id="result">Chưa quét</div>
+
+<button onclick="startScan()">Bắt đầu</button>
+<button onclick="stopScan()">Dừng</button>
+
+<script src="app.js?v=<?= Date.now() ?>"></script>
+
+</body>
+</html>
